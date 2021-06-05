@@ -2,7 +2,7 @@ library(mice)
 library(lubridate)
 library(VIM)
 
-df <- read.csv("troponin_pod1_regression_input.csv_")
+df <- read.csv("troponin_pod1_regression_input.csv")
 #md.pattern(df)
 
 p_missing <- unlist(lapply(df, function(x) sum(is.na(x))))/nrow(df)
